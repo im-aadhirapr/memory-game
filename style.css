@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #000000;
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-family: italic;
+    font-size: 50;
+}
+button{
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    color:#ff00ff;
+    background : #000000;
+    border-style: solid;
+    border-color: #ff00ff;
+    border-width: 0.5;
+}
+button:hover{
+    background: #ff00ff;
+    color: #000000;
+}
