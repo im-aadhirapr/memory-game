@@ -8,3 +8,9 @@ button{
     border-color: #1eff00;
     border-width: 0.5;
 }
+button:hover{
+    background : #000000;
+    color: white;
+    border-color: #1eff00;
+    border-width: 2px;
+}
