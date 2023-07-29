@@ -5,21 +5,20 @@ button{
     color:#000000;
     background : #ffffff;
     border-style: solid;
-    border-color: #1eff00;
+    border-color: #0059ff;
     border-width: 0.5;
 }
 button:hover{
     background : #000000;
     color: white;
-    border-color: #1eff00;
+    border-color: #0059ff;
     border-width: 2px;
 }
 .gamebox{
-    background-color: #000000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    text-align: center;
-    color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        width: 500px;
+        height: 500px;
 }
