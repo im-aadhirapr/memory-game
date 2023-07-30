@@ -13,15 +13,19 @@ button:hover{
     color: white;
     border-color: #0059ff;
     border-width: 2px;
-}
+} 
 .gamebox{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 auto;
-        width: 500px;
-        height: 500px;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+.card{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .flip{
     display: none;
