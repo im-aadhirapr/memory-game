@@ -21,4 +21,10 @@ button:hover{
         margin: 0 auto;
         width: 500px;
         height: 500px;
+        justify-content: space-between;
 }
+.flip{
+    display: none;
+}
+
+  
