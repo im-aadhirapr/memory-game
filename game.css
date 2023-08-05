@@ -14,21 +14,30 @@ button:hover{
     border-color: #0059ff;
     border-width: 2px;
 } 
-.gamebox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    justify-content: space-between;
-}
-.card{
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+.gameBox {
+    border: 1px solid black;
+    width: 500px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  td {
+    width: 250px;
+    padding: 10px;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .cover {
+    opacity: 0.5;
+  }
 .flip{
     display: none;
 }
+
 
   

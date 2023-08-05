@@ -1,67 +1,43 @@
 <html>
+    <head>
+        <title>GAME</title>
+        <link href="game.css" rel="stylesheet">
+        <script>
+        const table = document.querySelector('table');
 
-<head>
-    <title>GAME</title>
-    <link href="game.css" rel="stylesheet">
-    <script src="script.js"></script>
-</head>
+            table.addEventListener('click', function(event) {
+              const img = event.target;
+              const flipClass = 'flip';
+              const coverClass = 'cover';
+      
+              if (img.classList.contains(coverClass)) {
+                img.classList.remove(coverClass);
+                img.classList.add(flipClass);
+              } else {
+                img.classList.remove(flipClass);
+                img.classList.add(coverClass);
+              }
+            });
+            </script>
+    </head>
+    <body>
+        <button type="button" onclick="window.location.href='homepage.html'">Back home</button>
+        <button>Shuffle</button>
 
-<body>
-    <button type="button" onclick="window.location.href='homepage.html'">Back home</button>
-    <button>Shuffle</button>
-    <div class="gamebox">
+        <div class="gameBox">
+            <table border ="1">
+                <tr>
+                    <td><img src="cover.jpg" class="cover" alt="?"><img src="blue.jpg" class="flip" alt="blue"></td>
+                    <td><img src="cover.jpg" class="cover" alt="?"><img src="brown.jpg" class="flip" alt=""></td>
+                    <td><img src="cover.jpg" class="cover" alt="?"><img src="pink.jpg" class="flip" alt="pink"></td>
+                </tr>
+                <tr>
+                    <td><img src="cover.jpg" class="cover" alt="?"><img src="brown.jpg" class="flip" alt="brown"></td>
+                    <td><img src="cover.jpg" class="cover" alt="?"><img src="pink.jpg" class="flip" alt="pink"></td>
+                    <td><img src="cover.jpg" class="cover" alt="?"><img src="blue.jpg" class="flip" alt="blue"></td>
+                </tr>
+            </table>
+        </div>
 
-        <div class="card" data-image="">
-                
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div class="flip"><img src="pink.jpg" class="flip" alt="pink"></div>
-            </div>
-
-            <div class="card" data-image="">
-                
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div class="flip"> <img src="pink.jpg"  alt="pink"></div>
-            </div>
-
-            <div class="card" data-image="">
-               
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div  class="flip"><img src="brown.jpg" alt="brown"></div>
-
-            </div>
-
-            <div class="card" data-image="">
-             
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div class="flip"><img src="brown.jpg"  alt="brown"></div>
-
-            </div>
-
-            <div class="card" data-image="">
-              
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div class="flip"><img src="burgundy.jpg"  alt="burgundy"></div>
-            </div>
-
-            <div class="card" data-image="">
-               
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div  class="flip"> <img src="burgundy.jpg" alt="burgundy"></div>
-            </div>
-
-            <div class="card" data-image="">
-               
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div class="flip" > <img src="blue.jpg" alt="blue"></div>
-            </div>
-
-            <div class="card" data-image="">
-               
-                <div class="cover"> <img src="cover.jpg"  alt="?"></div>
-                <div  class="flip"><img src="blue.jpg" alt="blue"></div>
-            </div>
-    </div>
-
-</body>
-
+    </body>
 </html>
